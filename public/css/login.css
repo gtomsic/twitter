@@ -1,0 +1,60 @@
+*:root {
+  --primary: #2189f1;
+  --secondary: #08b58d;
+  --danger: #e63737;
+  --warning: #f9560a;
+  --background: #0c3073;
+  --gray: #b5b5b5;
+  --light: #ededed;
+  --light: #f1f1f1;
+  --dark: #1f1f1f;
+  --shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background: var(--primary);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.loginContainer {
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid var(--gray);
+  background-color: var(--light);
+  text-align: center;
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: 1px solid var(--gray);
+  background-color: var(--light);
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 5px 20px;
+}
