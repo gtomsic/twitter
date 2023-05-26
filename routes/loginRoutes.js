@@ -1,17 +1,10 @@
-const express = require("express");
+const router = require("express").Router();
+const {
+  loginGetController,
+  loginPostController,
+} = require("../controller/userController");
 
-const app = express();
-
-const router = express.Router();
-
-app.set("view engine", "pug");
-app.set("views", "views");
-
-router.get("/", (req, res, next) => {
-  const payload = {
-    pageTitle: "Login",
-  };
-  res.status(200).render("login", payload);
-});
+router.get("/", loginGetController);
+router.post("/", loginPostController);
 
 module.exports = router;

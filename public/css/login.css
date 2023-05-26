@@ -1,14 +1,14 @@
 *:root {
   --primary: #2189f1;
+  --primary-light: #c8e6fa;
   --secondary: #08b58d;
   --danger: #e63737;
   --warning: #f9560a;
-  --background: #0c3073;
   --gray: #b5b5b5;
-  --light: #ededed;
   --light: #f1f1f1;
+  --white: #ffffff;
   --dark: #1f1f1f;
-  --shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -57,4 +57,10 @@ input[type="submit"] {
   margin-bottom: 20px;
   outline: none;
   padding: 5px 20px;
+}
+
+.errorMessage {
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: var(--danger);
 }
